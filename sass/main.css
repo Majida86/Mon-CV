@@ -96,33 +96,33 @@ main h3 {
 main .parties {
   width: 400px;
 }
-main .aPropos {
+main .parties .aPropos {
   background-color: #160343;
   border-radius: 20%;
   height: 200px;
   width: 350px;
 }
-main .aPropos h3,
-main .aPropos p {
+main .parties .aPropos h3,
+main .parties .aPropos p {
   color: white;
   text-align: center;
   margin: 10px 0;
 }
-main .liste {
+main .parties .liste {
   display: flex;
   justify-content: space-between;
   gap: 50px;
 }
-main .date {
+main .parties .date {
   color: #160343;
   width: 130px;
   margin-bottom: 15px;
 }
-main .titre {
+main .parties .titre {
   display: flex;
   align-items: center;
 }
-main .lignes {
+main .parties .lignes {
   background-color: #160343;
   width: 150px;
   height: 5px;
@@ -140,7 +140,7 @@ main .lignes {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 20px 50px;
+    padding: 20px 40px;
   }
   main .parties {
     width: auto;

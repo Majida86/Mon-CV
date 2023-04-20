@@ -41,25 +41,24 @@ main {
 
     .parties {
         width: 400px;
-        & :hover {
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+        .aPropos {
+            background-color: #160343;
+            border-radius: 20%;
+            height: 200px;
+            width: 350px;
+
+
+
+            h3,
+            p {
+                color: white;
+                text-align: center;
+                margin: 10px 0;
+            }
         }
-
-    .aPropos {
-        background-color: $bleuFoncé;
-        border-radius: 20%;
-        height: 200px;
-        width: 350px;
-
-
-
-        h3,
-        p {
-            color: white;
-            text-align: center;
-            margin: 10px 0;
-        }
-    }
+    
 
     .liste {
         display: flex;
@@ -69,7 +68,7 @@ main {
     }
 
     .date {
-        color: $bleuFoncé;
+        color: $bleuFonc;
         width: 130px;
         margin-bottom: 15px;
     }
@@ -80,31 +79,34 @@ main {
     }
 
     .lignes {
-        background-color: $bleuFoncé;
+        background-color: $bleuFonc;
         width: 150px;
         height: 5px;
         margin-left: 20px;
     }
-
+    }
 }
+
+
+
 
 @media screen and (max-width:391px) {
-  header {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 20px 50px ;
-    .parties {
-        width: auto;
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
     }
-}
 
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 40px;
+
+        .parties {
+            width: auto;
+        }
     }
-    
+
 }
