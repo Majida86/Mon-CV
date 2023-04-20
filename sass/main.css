@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  color: #160343;
+  padding: 10px 0;
+}
+
+li, p {
+  font-family: "Mukta Mahee", sans-serif;
+  margin-bottom: 1rem;
+}
+
+header {
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header img {
+  border-radius: 20%;
+}
+header h1 {
+  font-size: 2rem;
+  padding: 20px 0;
+  font-weight: 600;
+}
+header h2 {
+  font-size: 1.5rem;
+}
+header .infosPerso {
+  padding: 10px;
+}
+header .fa-solid {
+  color: #ABC5E1;
+  margin-right: 20px;
+}
+
+main {
+  width: 80%;
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main h3 {
+  font-size: 1.5rem;
+}
+main .parties {
+  width: 400px;
+}
+main .aPropos {
+  background-color: #160343;
+  border-radius: 20%;
+  height: 200px;
+  width: 350px;
+}
+main .aPropos h3,
+main .aPropos p {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+main .liste {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+main .date {
+  color: #160343;
+  width: 130px;
+  margin-bottom: 15px;
+}
+main .titre {
+  display: flex;
+  align-items: center;
+}
+main .lignes {
+  background-color: #160343;
+  width: 150px;
+  height: 5px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 391px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 50px;
+  }
+  main .parties {
+    width: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

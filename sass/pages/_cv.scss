@@ -1,0 +1,109 @@
+header {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        border-radius: 20%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 20px 0;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .infosPerso {
+        padding: 10px;
+    }
+
+    .fa-solid {
+        color: $bleuClair;
+        margin-right: 20px;
+    }
+}
+
+main {
+    width: 80%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+        font-size: 1.5rem;
+
+    }
+
+    .parties {
+        width: 400px;
+        & :hover {
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+    .aPropos {
+        background-color: $bleuFoncé;
+        border-radius: 20%;
+        height: 200px;
+        width: 350px;
+
+
+
+        h3,
+        p {
+            color: white;
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+
+    .liste {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+    }
+
+    .date {
+        color: $bleuFoncé;
+        width: 130px;
+        margin-bottom: 15px;
+    }
+
+    .titre {
+        display: flex;
+        align-items: center;
+    }
+
+    .lignes {
+        background-color: $bleuFoncé;
+        width: 150px;
+        height: 5px;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:391px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 50px ;
+    .parties {
+        width: auto;
+    }
+}
+
+    }
+    
